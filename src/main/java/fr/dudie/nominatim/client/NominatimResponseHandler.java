@@ -69,7 +69,7 @@ public final class NominatimResponseHandler<T> implements ResponseHandler<T> {
 
         try {
             content = response.getEntity().getContent();
-            addresses = <T>gsonInstance
+            addresses = gsonInstance
                     .fromJson(new InputStreamReader(content, "utf-8"), responseType);
         } finally {
             if (null != content) {
