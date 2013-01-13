@@ -65,7 +65,7 @@ public final class NominatimResponseHandler<T> implements ResponseHandler<T> {
     public T handleResponse(final HttpResponse response) throws IOException {
 
         InputStream content = null;
-        final T addresses;
+        final <T> addresses;
 
         try {
             content = response.getEntity().getContent();
