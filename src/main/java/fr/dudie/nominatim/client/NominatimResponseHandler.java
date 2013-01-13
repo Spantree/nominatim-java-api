@@ -78,6 +78,6 @@ public final class NominatimResponseHandler<T> implements ResponseHandler<T> {
             response.getEntity().consumeContent();
         }
 
-        return <T>addresses;
+        return (T)addresses;
     }
 }
